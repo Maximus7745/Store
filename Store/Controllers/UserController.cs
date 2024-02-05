@@ -42,7 +42,9 @@ namespace Store.Controllers
         public async Task<IActionResult> AddNewUser(string name, string password)
         {
             if (name.IsNullOrEmpty() || password.IsNullOrEmpty())
-                return View();
+                return RedirectToAction("Index");
+            var user = context.Users.FirstOrDefault(p => p.Name == name);
+            if (user is not null) return RedirectToAction("Index");
             await context.Users.AddAsync(new User { Name = name, Password = password });
             await context.SaveChangesAsync();
             return await Authorization(name, password);
