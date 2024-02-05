@@ -1,0 +1,30 @@
+﻿.footer-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: cornflowerblue;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.footer-navigation-topics {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 140px;
+    list-style: none;
+}
+
+.footer-navigation {
+    list-style: none;
+}
+
+.footer-navigation-item a {
+    text-decoration: none;
+}
+
+.copyright a {
+    text-decoration: none;
+}

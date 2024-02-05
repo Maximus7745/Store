@@ -1,0 +1,42 @@
+﻿.autorization-flex-box {
+    display: flex;
+    justify-content: center;
+}
+
+.autorization-container {
+    padding: 30px;
+    margin: 20px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.autorization-label {
+    color: blue;
+}
+
+.autorization-input {
+    border-radius: 5px;
+}
+
+
+.autorization-button {
+    padding: 20px;
+    margin: 5px;
+    border-color: black;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 15px;
+    background-color: cornflowerblue;
+}
+
+.autorization-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

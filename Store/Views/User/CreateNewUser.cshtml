@@ -1,0 +1,17 @@
+﻿<div class="autorization-flex-box">
+    <div class="autorization-container">
+        <h2>Введите имя пользователя и пароль</h2>
+        <form class="autorization-form" method='post' asp-action="AddNewUser" asp-controller="User">
+            <p>
+                <label class="autorization-label">Логин</label><br />
+                <input class="autorization-input" name='name' />
+            </p>
+            <p>
+                <label class="autorization-label">Пароль</label><br />
+                <input class="autorization-input" type='password' name='password' />
+            </p>
+            <input class="autorization-button" type='submit' value='Зарегистрироваться' />
+        </form>
+    </div>
+</div>
+

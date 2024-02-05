@@ -1,0 +1,43 @@
+﻿.product-container {
+    margin: 20px;
+}
+
+
+.main-product-container {
+    border: 1px solid;
+    border-color: black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.prod-image {
+
+}
+
+.product-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-parameter {
+    margin: 20px;
+}
+
+
+.products-list {
+    background-color: cornflowerblue;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: black;
+}
+
+.prod-price {
+    font-size: 30px;
+}

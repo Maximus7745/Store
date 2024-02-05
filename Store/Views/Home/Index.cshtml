@@ -1,0 +1,23 @@
+﻿@model ProductsListViewModel
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+@*     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Store.styles.css" asp-append-version="true" /> *@
+</head>
+    <body>
+        <ul class="product-cards">
+        @foreach(var product in @Model.Products)
+        {
+            @Html.Partial("ProductList", product)
+        }
+        </ul>
+    <div page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true"
+         page-class="btn-page" page-class-normal="btn-secondary"
+         page-class-selected="btn-page-selected" class="btn-pages">
+    </div>
+    </body>
+</html>

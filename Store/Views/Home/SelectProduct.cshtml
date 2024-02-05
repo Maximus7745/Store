@@ -1,0 +1,24 @@
+﻿@model Product
+
+<div class="product-container">
+    <h2>@Model.Name.Split(",")[0]</h2>
+    <div class ="main-product-container">
+        <img class="prod-image" src="@Model.ImageUrl"/>
+        <div class="product-text">
+            <ul class="products-list">
+                @foreach (string parameter in @Model.Name.Split(",").Skip(1))
+                {
+                    <li class="product-parameter">@parameter</li>
+                }
+            </ul>
+            <p class="prod-price">@Model.Price</p>
+            <form id="@Model.Id" asp-action="AddToCart" asp-controller="Cart" method="post">
+                <input type="hidden" asp-for="Id" name="productId" value="@Model.Id" />
+                <input type="hidden" name="returnUrl" value="@(ViewContext.HttpContext.Request.Path + ViewContext.HttpContext.Request.QueryString)" />
+                <button type="submit" class="button-card">
+                    Добавить в корзину
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
